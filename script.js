@@ -8,7 +8,13 @@ var cookieStand1 = {
   cookies: [],
   totalCookies: 0,
   addInfo: function() {
-  //setting up a function to get an element from the page by ID    
+  //setting up a function to get an element from the page by ID
+    var list = document.getElementById('stores')
+    var info = "<h2>"+this.name+"</h2>"
+    list.innerHTML+= info;
+
+
+
   },
   randomCustomerPerHour: function() {
     var customersThisHour = Math.floor( Math.random()*(this.maximumCustomerPerHour-this.minimumCustomerPerHour) ) + this.minimumCustomerPerHour
@@ -38,3 +44,4 @@ var cookieStand1 = {
 console.log(cookieStand1)
 cookieStand1.cookiesPerDay()
 console.log(cookieStand1)
+cookieStand1.addInfo()
