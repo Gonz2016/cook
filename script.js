@@ -11,13 +11,11 @@ var cookieStand1 = {
   //setting up a function to get an element from the page by ID
     var list = document.getElementById('stores')
     var info = "<h2>"+this.name+"</h2>"
-    list.innerHTML+= info;
-
-
+    list.innerHTML += info;
 
   },
   randomCustomerPerHour: function() {
-    var customersThisHour = Math.floor( Math.random()*(this.maximumCustomerPerHour-this.minimumCustomerPerHour) ) + this.minimumCustomerPerHour
+    var customersThisHour = Math.floor(Math.random()*(this.maximumCustomerPerHour-this.minimumCustomerPerHour) ) + this.minimumCustomerPerHour
     //console.log(customersThisHour)
     return customersThisHour
   },
@@ -34,11 +32,15 @@ var cookieStand1 = {
       var cookiesThisHour = this.cookiesPerHour()
       this.cookies[i] = cookiesThisHour;
       this.totalCookies = this.totalCookies + cookiesThisHour
-      console.log(this.totalCookies)
+      var listItem = document.createElement("li");
+      listItem.innerHTML=this.totalCookies;
+
+      var ul = document.getElementById("Cookies");
+      ul.appendChild(listItem);
+      (this.totalCookies)
       console.log(this.cookies)
     }
     //stores the results of each call in an array
-
   }
 }
 console.log(cookieStand1)
