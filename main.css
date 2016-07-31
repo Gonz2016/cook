@@ -1,0 +1,14 @@
+/* This is a Cascading Style Sheet CSS*/
+
+h1 {
+ color: blue;
+}
+
+h2 {
+ color: purple;
+}
+
+body {
+ font-family: Arial, Verdana, Helvetica, san-serif;
+ background-color: lightgreen;
+}
