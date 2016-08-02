@@ -1,14 +1,20 @@
-/* This is a Cascading Style Sheet CSS*/
+/* This is a Cascading Style Sheet = CSS*/
 
 h1 {
  color: blue;
-}
+ }
 
 h2 {
  color: purple;
-}
+ }
+
+ul {
+  color: red;
+  font-size: 25px;
+  }
 
 body {
- font-family: Arial, Verdana, Helvetica, san-serif;
+ margin: 45px;
  background-color: lightgreen;
-}
+ font-family: Georgia, times, sans-serif;
+ }
