@@ -2,21 +2,24 @@
 
 h1 {
  color: blue;
+ font-family: 'Open Sans', sans-serif;
  }
 
 h2 {
  color: purple;
+ font-family: 'Open Sans', sans-serif;
  }
 
 ul {
   color: red;
   font-size: 25px;
   margin: 0;
+  padding: 0;
   }
 
 body {
  margin: 45px;
- font-family: Georgia, times, sans-serif;
+ font-family: Georgia, Times, sans-serif;
  }
 
  div.background {

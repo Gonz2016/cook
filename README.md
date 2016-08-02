@@ -6,4 +6,6 @@ words, and having code rejections.
 Overall a nice project.  But I need more practice.  
 
 Linked a stylesheet for the improvement this project, and made another
-commit for project # 7.  
+commit for project # 7.
+
+created a styleguide to complete project # 7.   
