@@ -70,3 +70,18 @@ function createTable(){
  }
 
 createTable();
+
+button.addEventListener("click", function(){
+  var loctionName, avgCustomers;
+  locationName = document.getElementById('name').value;
+  var addLocation = new location(locationName);
+  var returnedTable = addLocation.addLocation();
+
+  var tableContainer = document.getElementById("table");
+  tablesContainer.appendChild(returnedTable);
+
+})
+
+function resetFunction(){
+  document.getElementById("myForm").reset();
+}
