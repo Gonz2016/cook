@@ -47,7 +47,7 @@ body {
 
 table {
   margin-left: 15%;
-  background-color: lightblue;
+  background-color: cyan;
   width: 75%;
   height: 100%;
 }
@@ -62,4 +62,12 @@ th {
   color: red;
   font-size: 25px;
   padding: inherit;
+}
+
+div {
+  color: red;
+  font-size: 25px;
+  background-color: cyan;
+
+
 }

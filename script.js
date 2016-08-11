@@ -78,7 +78,7 @@ button.addEventListener("click", function(){
   var returnedTable = addLocation.addLocation();
 
   var tableContainer = document.getElementById("table");
-  tablesContainer.appendChild(returnedTable);
+  tableContainer.appendChild(returnedTable);
 
 })
 
