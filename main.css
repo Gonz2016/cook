@@ -68,6 +68,6 @@ div {
   color: red;
   font-size: 25px;
   background-color: cyan;
-
+  display: inline-block, 80px;
 
 }

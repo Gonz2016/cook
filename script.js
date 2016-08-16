@@ -67,20 +67,26 @@ function createTable(){
   var cookieData = cookieSales[i].getCookieOutput();
   table.appendChild(cookieData);
   }
- }
+}
 
 createTable();
 
-button.addEventListener("click", function(){
-  var loctionName, avgCustomers;
-  locationName = document.getElementById('name').value;
-  var addLocation = new location(locationName);
-  var returnedTable = addLocation.addLocation();
+var button = document.getElementById('locationBtn');
 
-  var tableContainer = document.getElementById("table");
-  tableContainer.appendChild(returnedTable);
+button.addEventListener("click", addStore());
 
-})
+function addStore() {
+  var locationName = document.getElementById('storeName').value;
+  var minCustomers = document.getElementById('minCustomers').value;
+  var aveCustomers = document.getElementById('aveCustomers').value;
+  var maxCustomers = document.getElementById('maxCustomers').value;
+  var addLocation = new store(locationName, 4, 7, 5, 0);
+  var returnedTable = addLocation;
+  var row = document.getElementById('storeInfo');
+  var tableContainer = document.getElementById("storeInfo");
+
+
+}
 
 function resetFunction(){
   document.getElementById("myForm").reset();

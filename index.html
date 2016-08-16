@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
     <h1>Store Table</h1>
 
     <table id="storeInfo" border="2">
@@ -22,16 +23,16 @@
 
 <h2>New Store Form</h2>
     <div>
-      <form id=myForm>
+      <form id="myForm">
         <fieldset>
-          Location Name: <input type="text" name="location"></input><br><br>
-          Custmrs per Hr: <input type="text" name="customersPerHour"><br><br>
-          <input type="button" onclick="addStore()" value="Add Store"><br><br>
+          Location Name: <input type="text" id="storeName" name="location"></input><br>
+          Min Customers: <input type="text" id="minCustomers" name="minCustomers"></input><br>
+          Ave Customers: <input type="text" id="aveCustomers" name="aveCustomers"></input><br>
+          Max Customers: <input type="text" id="maxCustomers" name="maxCustomers"></input><br>
+          <input type="button" id="locationBtn" onclick="addStore()" value="Add Store"><br>
           <input type="button" onclick="resetFunction()" value="Reset Form">
         </fieldset>
-
       </form>
-
     </div>
 
     <script type="text/javascript" src="script.js"></script>
